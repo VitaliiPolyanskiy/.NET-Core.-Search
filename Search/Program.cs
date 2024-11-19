@@ -42,9 +42,9 @@ namespace CSharpApplication.SearchInFiles
             // Заменяем . на \.
             Mask = Mask.Replace(".", @"\.");
             // Заменяем ? на .
-            Mask = Mask.Replace("?", ".");
+            Mask = Mask.Replace("?", "."); // ????.txt  ....\.txt
             // Заменяем * на .*
-            Mask = Mask.Replace("*", ".*");
+            Mask = Mask.Replace("*", ".*");// *.txt   .*\.txt
             // Указываем, что требуется найти точное соответствие маске
             Mask = "^" + Mask + "$";
 
